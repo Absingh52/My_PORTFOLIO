@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+            background: #d7d7d7;
+            border-radius: 12px;
+            width: fit-content;
+        }
+
+        .nav-button {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50px;
+            background-color: white;
+            cursor: pointer;
+            overflow: hidden;
+            transition: width 0.3s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-button:hover {
+            width: 130px;
+        }
+
+        /* Icon Container */
+        .nav-button-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            transition: left 0.3s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-button:hover .nav-button-icon {
+            left: 20px;
+        }
+
+        /* Label Text */
+        .nav-button-label {
+            position: absolute;
+            left: 52px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            white-space: nowrap;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s ease-out;
+            pointer-events: none;
+        }
+
+        .nav-button:hover .nav-button-label {
+            opacity: 1;
+        }
+
+        /* Demo icons using Unicode symbols */
+        .icon-home::before {
+            content: "🏠";
+        }
+
+        .icon-user::before {
+            content: "👤";
+        }
+
+        .icon-file::before {
+            content: "📄";
+        }
+
+        .icon-projects::before {
+            content: "📁";
+        }
+
+        .icon-contact::before {
+            content: "✉️";
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <button class="nav-button">
+            <span class="nav-button-icon icon-home"></span>
+            <span class="nav-button-label">Home</span>
+        </button>
+
+        <button class="nav-button">
+            <span class="nav-button-icon icon-user"></span>
+            <span class="nav-button-label">About</span>
+        </button>
+
+        <button class="nav-button">
+            <span class="nav-button-icon icon-file"></span>
+            <span class="nav-button-label">Resume</span>
+        </button>
+
+        <button class="nav-button">
+            <span class="nav-button-icon icon-projects"></span>
+            <span class="nav-button-label">Projects</span>
+        </button>
+
+        <button class="nav-button">
+            <span class="nav-button-icon icon-contact"></span>
+            <span class="nav-button-label">Contact</span>
+        </button>
+    </div>
+</body>
+</html>
