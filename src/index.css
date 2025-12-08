@@ -4,6 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  
+  
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
 }
 
 
@@ -118,7 +127,7 @@
   white-space: nowrap;
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight:700;
   transition: opacity 0.3s ease-out;
   pointer-events: none;
   z-index: 1;
@@ -133,13 +142,12 @@
   width: 40px;
   height: 40px;
   border-radius: 4px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   cursor: pointer;
-
+  
   transition: background 0.3s ease-out;
 }
 
@@ -148,16 +156,21 @@
   font-size: 28px;
   transition: transform 0.6s ease-out;
   transform: rotate(0deg);
+  
 }
 
 /* hover effect → rotate twice 180° = 360° */
 .icon-box:hover .icon-rotate {
   transform: rotate(360deg);
+  
 }
 
 /* optional: background lighten on hover */
 .icon-box:hover {
   background: #d5d5d5;
+}
+.about{
+  /* padding-top: 5%; */
 }
 
 
