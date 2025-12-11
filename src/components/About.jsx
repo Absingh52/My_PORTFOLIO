@@ -5,6 +5,7 @@ import Shape1 from "../assets/shape-1.png"; // left-top
 import Shape2 from "../assets/shape-2.png"; // left-bottom
 import Shape3 from "../assets/shape-3.png"; // right-top
 import Shape4 from "../assets/shape-4.png"; // right-bottom
+import Skills from "./Skills";
 
 // IMAGES
 // IMAGES
@@ -107,6 +108,7 @@ const child = {
 
 const About = () => {
   return (
+    <>
     <section
       id="about"
       className="relative min-h-screen  w-full bg-black text-white overflow-hidden flex flex-col items-center  px-20!important "
@@ -159,14 +161,14 @@ const About = () => {
 
       {/* MAIN CONTENT */}
       <motion.div
-        className="relative z-10 max-w-6xl flex flex-col items-center gap-10 text-center "
+        className="relative z-10 max-w-6xl flex  flex-col items-center gap-10 text-center "
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
       >
         <motion.h1
-          className="text-[6rem]  font-extrabold tracking-[0.1em] mt-15! mb-6!"
+          className="text-[8rem]  font-extrabold tracking-widest mt-15! mb-6!"
           variants={child}
         >
           ABOUT ME
@@ -174,25 +176,25 @@ const About = () => {
 
        <motion.div  className="w-[50%]">
          <motion.p
-          className="text-[1em] md:text-lg leading-relaxed text-gray-200 mb-4"
+          className="text-[1em] md:text-lg leading-relaxed tracking-wider text-gray-200 mb-4"
           variants={child}
         >
           Hi, I’m Abhishek Singh , a MERN stack developer who loves building backend systems with JavaScript. 
 
         </motion.p>
          <motion.p
-          className="text-base md:text-lg leading-relaxed text-gray-300 mb-8"
+          className="text-base md:text-lg leading-relaxed tracking-wider text-gray-300 mb-8"
           variants={child}
         >
         I enjoy solving problems, exploring new technologies, and improving the way things work behind the scenes.
-I completed my BCA, have strong DSA fundamentals, and I’m currently learning TypeScript to level up my full-stack skills.
+        I completed my BCA, have strong DSA fundamentals, and I’m currently learning TypeScript to level up my full-stack skills.
         </motion.p>
        </motion.div>
 
        
 
         <motion.button
-          className="inline-flex items-center justify-center px-8! py-3! rounded-full bg-linear-to-r from-pink-500 to-purple-500 text-sm md:text-base font-semibold shadow-lg"
+          className="inline-flex items-center justify-center tracking-widest px-10! py-3! rounded-full bg-linear-to-r from-pink-500 to-purple-500 text-lg  font-semibold shadow-lg"
           variants={child}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
@@ -200,7 +202,10 @@ I completed my BCA, have strong DSA fundamentals, and I’m currently learning T
           CONTACT ME
         </motion.button>
       </motion.div>
+
     </section>
+    <Skills/>
+    </>
   );
 };
 
