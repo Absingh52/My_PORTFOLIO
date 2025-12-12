@@ -1,11 +1,12 @@
-// ProjectsTrial.jsx
+// Projects.jsx
 import React, { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./projects-trial.css";
+import "../components/index.css"
 import project1 from '../assets/project1.jpg';
 import project2 from '../assets/project2.jpg';
 import project3 from '../assets/project3.jpg';
+import Contact from "./Contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +75,7 @@ export default function Projects() {
               });
             },
           },
-          i * 1.2 // increased stagger so each card appears separately as you scroll
+          i * 1.2 
         );
       });
 
@@ -85,10 +86,11 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="trial-wrapper flex flex-col items-center  ">
+    <>
+    <section id="projects" className="trial-wrapper flex flex-col  rounded-b-[4rem] items-center  ">
       <h1 className="font-bold text-[8rem] pt-10! ">PROJECTS</h1>
 
-      <div className="trial-inner " ref={containerRef}>
+      <div className="trial-inner pb-30! " ref={containerRef}>
         
 
         <div className="trial-stage mt-2! ">
@@ -138,5 +140,7 @@ export default function Projects() {
         </div>
       </div>
     </section>
+    <Contact/>
+    </>
   );
 }
