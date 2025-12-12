@@ -16,7 +16,7 @@ const Hero = () => {
     <>
     <div className="hero   ">
         
-              <nav className="w-full h-[8vh]  font-semibold text-xl text-white flex justify-between mb-10! pt-4!  px-[10rem]! items-center">
+              <nav className="w-full h-[8vh]  font-semibold text-xl text-white flex justify-between mb-10! pt-7!  px-[10rem]! items-center">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Project</a>
@@ -31,12 +31,12 @@ const Hero = () => {
                 </div>
                
               </div>
-              <div className="">
+             
                 
-                  <img src={image} className="absolute bottom-0 right-[10%] w-[37%]  " alt="" />
+                  <img src={image} className="absolute bottom-0 right-[10%] w-[33%]  " alt="" />
                 
                 
-              </div>
+              
     </div>
     <About/>
     </>

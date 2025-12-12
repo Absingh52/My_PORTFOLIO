@@ -1,15 +1,17 @@
 .trial-wrapper {
   width: 100vw;
   min-height: 100vh;
-  background: #000;
+  background: #000000;
   color: #fff;
   overflow: hidden;
   position: relative;
+   
+ 
 }
 
 .trial-inner {
-  width: 90%;
-  max-width: 900px;
+  width: 100vw;
+ 
   margin: 0 auto;
   /* padding-top: 80px; */
   position: relative;
@@ -17,14 +19,16 @@
 
 .trial-title {
   text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+  font-size: 6.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* the pinned stage */
 .trial-stage {
   position: relative;
-  height: 70vh;
+  height: 90vh;
+  
   min-height: 480px;
   z-index: 5; /* base */
 }
@@ -35,19 +39,18 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vw;                 /* card width = 80% of viewport width */
-  max-width: 1200px;           /* optional cap on very large screens */
+  width: 96vw;      
+  height: 75vh;           /* card height */
   padding: 20px 20px;     
-     /* vertical 20px, horizontal 2rem (you can change 2rem to desired value) */
-  border-radius: 12px;
+  border-radius: 50px;
   background: #0f0f0f;         /* slightly different so shadow reads */
-  border: 1px solid #141414;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   color: #fff;
   opacity: 0;
   z-index: 10;
   transition: transform 300ms ease, box-shadow 300ms ease;
   box-sizing: border-box;      /* important so padding doesn't expand width */
+  overflow: hidden;
 }
 
 
