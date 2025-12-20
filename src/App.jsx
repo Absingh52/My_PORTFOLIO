@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './components/hero.jsx'
+import Hero from './components/Hero.jsx'
 import './index.css'
 const App = () => {
   return (
