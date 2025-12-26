@@ -123,6 +123,8 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={0}
+        loading='lazy'
+
       />
 
       <motion.img
@@ -134,6 +136,8 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={1}
+        loading='lazy'
+
       />
 
       {/* RIGHT IMAGES */}
@@ -146,6 +150,8 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={0}
+        loading='lazy'
+
       />
 
       <motion.img
@@ -157,6 +163,8 @@ const About = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={1}
+        loading='lazy'
+
       />
 
       {/* MAIN CONTENT */}

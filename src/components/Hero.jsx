@@ -139,6 +139,7 @@ const Hero = () => {
                     variants={imageVariants}
                     initial="hidden"
                     animate="visible"
+                    loading='lazy'
                   />
                 
                 

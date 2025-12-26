@@ -4,14 +4,14 @@ import Shape1 from "../assets/shape-1.png";
 import Shape2 from "../assets/shape-2.png";
 import Shape3 from "../assets/shape-3.png";
 import Shape4 from "../assets/shape-4.png";
-import element1 from "../assets/element1.png";
-import element2 from "../assets/element2.png";   
-import element3 from "../assets/element3.png";
-import element4 from "../assets/element4.png";
-import element5 from "../assets/element5.png";
-import element6 from "../assets/element6.png";
-import element7 from "../assets/element7.png";
-import element8 from "../assets/element8.png";
+import element1 from "../assets/element1.jpeg";
+import element2 from "../assets/element2.jpeg";   
+import element3 from "../assets/element3.jpeg";
+import element4 from "../assets/element4.jpeg";
+import element5 from "../assets/element5.jpeg";
+import element6 from "../assets/element6.jpeg";
+import element7 from "../assets/element7.jpeg";
+import element8 from "../assets/element8.jpeg";
 
 // Animation variants
 const imageLeftVariants = {
@@ -138,6 +138,7 @@ const Contact = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={0}
+        loading='lazy'
       />
 
       <motion.img
@@ -149,6 +150,8 @@ const Contact = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={1}
+        loading='lazy'
+
       />
 
       {/* RIGHT SHAPES */}
@@ -161,6 +164,8 @@ const Contact = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={0}
+        loading='lazy'
+
       />
 
       <motion.img
@@ -172,6 +177,8 @@ const Contact = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={1}
+        loading='lazy'
+
       />
 
       {/* LEFT CONTENT - HEADING */}
@@ -281,14 +288,14 @@ const Contact = () => {
             </div>
        </div>
        <div className='flex size-48'>
-          <img src={element1} alt="" />
-          <img src={element2} alt="" />
-          <img src={element3} alt="" />
-          <img src={element4} alt="" />
-          <img src={element5} alt="" />
-          <img src={element6} alt="" />
-          <img src={element7} alt="" />
-          <img src={element8} alt="" />
+          <img src={element1} className='' loading='lazy' alt="" />
+          <img src={element2} loading='lazy' alt="" />
+          <img src={element3} loading='lazy' alt="" />
+          <img src={element4} loading='lazy' alt="" />
+          <img src={element5}  loading='lazy'alt="" />
+          <img src={element6} loading='lazy' alt="" />
+          <img src={element7} loading='lazy' alt="" />
+          <img src={element8} loading='lazy' alt="" />
 
        </div>
     </section>
